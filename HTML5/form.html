@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="layout.html" method="get" autocomplete="on" novalidate>
+      <label for="fname">First name :</label><br />
+      <input type="text" name="fname" id="fname" /><br />
+      <label for="lname">Last name :</label><br />
+      <input type="text" name="lname" id="lname" /><br /><br />
+
+      <p>Pilih bahasa pemrograman yang kamu suka :</p>
+      <input type="radio" name="fav_language" id="html" value="HTML" />
+      <label for="html">HTML</label><br />
+      <input type="radio" name="fav_language" id="css" value="CSS" />
+      <label for="css">CSS</label><br />
+      <input
+        type="radio"
+        name="fav_language"
+        id="javascript"
+        value="JavaScript"
+      />
+      <label for="javascript">JavaScript</label><br /><br />
+
+      <input type="checkbox" name="vehicle1" id="vehicle1" value="Bike" />
+      <label for="vehicle1">I have a bike.</label><br />
+      <input type="checkbox" name="vehicle2" id="vehicle2" value="Car" />
+      <label for="vehicle2"> I have a car.</label><br />
+      <input type="checkbox" name="vehicle3" id="vehicle3" value="Boat" />
+      <label for="vehicle3"> I have a boat.</label><br /><br />
+
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="Wibi" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Sana" /><br /><br />
+      <input type="submit" value="Submit" /><br /><br />
+
+      <label for="programming">Choose a programming language:</label>
+      <select id="programming" name="programming" size="4" multiple>
+        <option value="JS" selected>JavaScript</option>
+        <option value="Java">Java</option>
+        <option value="PHP">PHP</option>
+        <option value="Ruby">RUBY</option></select
+      ><br /><br />
+
+      <textarea name="message" rows="10" cols="30">
+Kucing sedang bermain di kebun</textarea
+      ><br /><br />
+
+      <button type="button" onclick="alert('Hello World!')">Klik aku!</button>
+      <br /><br />
+
+      <fieldset>
+        <legend>Biodata:</legend>
+        <label for="fname">Nama depan :</label><br />
+        <input type="text" id="fname" name="fname" value="Wibi" /><br />
+        <label for="lname">Nama Belakang :</label><br />
+        <input type="text" id="lname" name="lname" value="Sana" /><br /><br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+      <br /><br />
+
+      <input list="browsers" />
+      <datalist id="browsers">
+        <option value="Internet Explorer"></option>
+        <option value="Firefox"></option>
+        <option value="Chrome"></option>
+        <option value="Opera"></option>
+        <option value="Safari"></option>
+      </datalist>
+    </form>
+
+    <form
+      action="layout.html"
+      oninput="x.value=parseInt(a.value)+parseInt(b.value)"
+      method="post"
+    >
+      0
+      <input type="range" id="a" name="a" value="50" />
+      100 +
+      <input type="number" id="b" name="b" value="50" />
+      =
+      <output name="x" for="a b"></output>
+      <br /><br />
+      <input type="submit" /><br>
+      <input type="button" /><br>
+      <input type="checkbox" /><br>
+      <input type="color" /><br>
+      <input type="date" /><br>
+      <input type="datetime-local" /><br>
+      <input type="email" /><br>
+      <input type="file" /><br>
+      <input type="hidden" /><br>
+      <input type="image" /><br>
+      <input type="month" /><br>
+      <input type="number" /><br>
+      <input type="password" /><br>
+      <input type="radio" /><br>
+      <input type="range" /><br>
+      <input type="reset" /><br>
+      <input type="search" /><br>
+      <input type="submit" /><br>
+      <input type="tel" /><br>
+      <input type="text" /><br>
+      <input type="time" /><br>
+      <input type="url" /><br>
+      <input type="week" /><br>
+    </form>
+
+    <form action="" autocomplete="on" novalidate>
+        <input type="text" readonly>
+        <input type="text" disabled>
+        <input type="text" size="50">
+        <input type="text" maxlength="4">
+        <input type="number" min="1" max="50">
+        <input type="file" multiple>
+        <input type="text" pattern="[A-Za-z]{3}">
+        <input type="text" placeholder="Halo Kawan">
+        <input type="text" required>
+        <input type="number" step="3">
+        <input type="text" autofocus>
+        <input type="text" height="50" width="50">
+        <input type="submit" formenctype="multipart/form-data">
+        <input type="submit" formmethod="post">
+        <input type="submit" formtarget="_blank">
+        <input type="submit" formnovalidate>
+    </form>
+  </body>
+</html>

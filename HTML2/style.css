@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+header {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+header img {
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+
+section {
+    width: 90%;
+    align-items: start;
+    justify-content: start;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+section ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+section ul li {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+section ul li p:nth-child(1) {
+    width: 300px;
+    font-weight: bold;
+}
+
+.h-jp {
+    margin-top: 100px;
+}
+
+.kotak {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 700px;
+    margin-top: 50px;
+}
+
+.kotak-child-1 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.kotak-child-2 {
+    text-align: left;
+    align-items: start;
+    justify-content: start;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px;
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: #252A34;
+    color: #ffffff;
+}
+
+.kotak-child-1 p {
+    margin-bottom: 10px;
+}
+
+.hari {
+    font-size: 20px;
+    font-weight: bolder;
+    line-height: 50px;
+}

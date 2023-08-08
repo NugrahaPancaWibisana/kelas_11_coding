@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      header {
+        background-color: #303030;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+      }
+
+      .nav1 {
+        float: left;
+        width: 30%;
+        height: 300px;
+        background: #ccc;
+        padding: 20px;
+      }
+
+      .nav1 .ul1 {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .article1 {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+        height: 300px;
+      }
+
+      .section1::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .foot1 {
+        background-color: #303030;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+
+      @media (max-width: 600px) {
+        .nav1,
+        .article1 {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      /* space */
+
+      .section2 {
+        display: -webkit-flex;
+        display: flex;
+      }
+
+      .nav2 {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        background: #ccc;
+        padding: 20px;
+      }
+
+      .nav2 .ul2 {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .article2 {
+        -webkit-flex: 3;
+        -ms-flex: 3;
+        flex: 3;
+        background-color: #f1f1f1;
+        padding: 10px;
+        height: 300px;
+      }
+
+      .foot2 {
+        background-color: #303030;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+
+      @media (max-width: 600px) {
+        .section2 {
+          -webkit-flex-direction: column;
+          flex-direction: column;
+        }
+      }
+
+      /* responsive */
+
+      .left {
+        background-color: #2196f3;
+        padding: 20px;
+        float: left;
+        width: 20%;
+      }
+
+      .main {
+        background-color: #f1f1f1;
+        padding: 20px;
+        float: left;
+        width: 60%;
+      }
+
+      .right {
+        background-color: #04aa6d;
+        padding: 20px;
+        float: left;
+        width: 20%;
+      }
+
+      @media screen and (max-width: 800px) {
+        .left,
+        .main,
+        .right {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Kota</h2>
+    </header>
+
+    <section class="section1">
+      <nav class="nav1">
+        <ul class="ul1">
+          <li><a href="#">Jakarta</a></li>
+          <li><a href="#">Bali</a></li>
+          <li><a href="#">Yogyakarta</a></li>
+        </ul>
+      </nav>
+
+      <article class="article1">
+        <h1>Jakarta</h1>
+        <p>
+          Jakarta adalah ibu kota Indonesia dan merupakan salah satu kota
+          terbesar di dunia. Kota ini memiliki populasi yang padat dan menjadi
+          pusat kegiatan politik, ekonomi, dan budaya negara. Dikenal sebagai
+          pusat bisnis, Anda akan menemukan banyak gedung pencakar langit, pusat
+          perbelanjaan mewah, dan pusat hiburan.
+        </p>
+        <br />
+        <p>
+          Meskipun lalu lintasnya seringkali padat, Jakarta menawarkan berbagai
+          tempat menarik seperti Monumen Nasional (Monas) yang ikonik, serta
+          Taman Mini Indonesia Indah yang memamerkan keragaman budaya dan
+          keanekaragaman Indonesia.
+        </p>
+      </article>
+    </section>
+
+    <footer class="foot1">
+      <p>Footer</p>
+    </footer>
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- space -->
+
+    <header>
+      <h2>Kota</h2>
+    </header>
+
+    <section class="section2">
+      <nav class="nav2">
+        <ul class="ul2">
+          <li><a href="#">Jakarta</a></li>
+          <li><a href="#">Bali</a></li>
+          <li><a href="#">Yogyakarta</a></li>
+        </ul>
+      </nav>
+
+      <article class="article2">
+        <h1>Jakarta</h1>
+        <p>
+          Jakarta adalah ibu kota Indonesia dan merupakan salah satu kota
+          terbesar di dunia. Kota ini memiliki populasi yang padat dan menjadi
+          pusat kegiatan politik, ekonomi, dan budaya negara. Dikenal sebagai
+          pusat bisnis, Anda akan menemukan banyak gedung pencakar langit, pusat
+          perbelanjaan mewah, dan pusat hiburan.
+        </p>
+        <br />
+        <p>
+          Meskipun lalu lintasnya seringkali padat, Jakarta menawarkan berbagai
+          tempat menarik seperti Monumen Nasional (Monas) yang ikonik, serta
+          Taman Mini Indonesia Indah yang memamerkan keragaman budaya dan
+          keanekaragaman Indonesia.
+        </p>
+      </article>
+    </section>
+
+    <footer class="foot2">
+      <p>Footer</p>
+    </footer>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- responsive -->
+    <img
+      src="illustrate-tokyo-city-by-night-with-anime-mangastyle-drawings-featuring-city-views-vibrant-purple-neon-lights-generative-ai_379823-7278-transformed.png"
+      style="max-width: 100%; height: auto"
+    />
+    <br />
+    <br />
+    <br />
+    <picture>
+      <source
+        srcset="
+          illustrate-tokyo-city-by-night-with-anime-mangastyle-drawings-featuring-city-views-vibrant-purple-neon-lights-generative-ai_379823-7278-transformed
+        "
+        media="(max-width: 600px)"
+      />
+      <source
+        srcset="
+          illustrate-tokyo-city-by-night-with-anime-mangastyle-drawings-featuring-city-views-vibrant-purple-neon-lights-generative-ai_379823-7278-transformed
+        "
+        media="(max-width: 1500px)"
+      />
+      <source
+        srcset="
+          illustrate-tokyo-city-by-night-with-anime-mangastyle-drawings-featuring-city-views-vibrant-purple-neon-lights-generative-ai_379823-7278-transformed
+        "
+      />
+      <img
+        src="illustrate-tokyo-city-by-night-with-anime-mangastyle-drawings-featuring-city-views-vibrant-purple-neon-lights-generative-ai_379823-7278-transformed.png"
+        alt="bg"
+      />
+    </picture>
+    <br />
+    <br />
+    <br />
+
+    <h1 style="font-size: 10vw">Hello World</h1>
+
+    <br />
+    <br />
+    <br />
+    <div class="left">
+      <p>Left menu</p>
+    </div>
+    <div class="main">
+      <p>Main content</p>
+    </div>
+    <div class="right">
+      <p>Right content</p>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <div class="w3-container w3-green">
+      <h1>Halo</h1>
+      <p>Responsive wibi</p>
+    </div>
+
+    <div class="w3-row-padding">
+      <div class="w3-third">
+        <h2>Jakarta</h2>
+        <p>
+          Jakarta adalah ibu kota Indonesia dan merupakan salah satu kota
+          terbesar di dunia. Kota ini memiliki populasi yang padat dan menjadi
+          pusat kegiatan politik, ekonomi, dan budaya negara. Dikenal sebagai
+          pusat bisnis, Anda akan menemukan banyak gedung pencakar langit, pusat
+          perbelanjaan mewah, dan pusat hiburan.
+        </p>
+      </div>
+      <div class="w3-third">
+        <h2>Bali</h2>
+        <p>
+          Bali adalah destinasi pariwisata yang penuh pesona di Indonesia. Pulau
+          ini terkenal dengan pantai-pantai pasir putih yang indah, air laut
+          biru yang jernih, dan ombak yang ideal untuk berselancar. Selain
+          keindahan alamnya, Bali juga memiliki budaya unik yang diwarnai oleh
+          upacara tradisional, seni tari, dan seni patung.
+        </p>
+      </div>
+      <div class="w3-third">
+        <h2>Yogyakarta</h2>
+        <p>
+          Yogyakarta, sering disingkat sebagai "Jogja," adalah kota istimewa di
+          Pulau Jawa yang memiliki nilai sejarah dan budaya yang kaya. Kota ini
+          adalah pusat kebudayaan Jawa dan dikenal karena keberadaan Istana
+          Keraton Yogyakarta, istana kerajaan yang masih dihuni dan dijaga
+          tradisi-tradisi budayanya.
+        </p>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <div class="container-fluid p-5 bg-primary text-white text-center">
+      <h1>Page pertama bootstrap ku</h1>
+      <p>ini responsive loh</p>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-sm-4">
+          <h3>Kolom 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+          <p>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris...
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <h3>Kolom 2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+          <p>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris...
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <h3>Kolom 3</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+          <p>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris...
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

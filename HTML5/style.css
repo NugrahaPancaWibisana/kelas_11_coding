@@ -1,0 +1,7 @@
+.kotak {
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    border-radius:50%;
+    border: 1px solid black;
+}
