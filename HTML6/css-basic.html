@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS BASIC</title>
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+      }
+
+      body {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-family: Arial, Helvetica, sans-serif;
+        flex-direction: column;
+      }
+
+      h1 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+
+      .space {
+        margin-bottom: 50px;
+      }
+
+      .item {
+        width: 100%;
+        height: 200px;
+        background-color: #ccc;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .all {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+
+      .kotak {
+        width: 100px;
+        height: 100px;
+        border-radius: 20px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        background-color: #303030;
+        font-weight: bold;
+        margin: 20px 20px;
+      }
+
+      .hex {
+        color: #00ff00;
+      }
+
+      .rgb {
+        color: rgb(58, 91, 202);
+      }
+
+      .hsl {
+        color: hsl(11, 71%, 45%);
+      }
+
+      .bg {
+        color: #fff;
+      }
+
+      .bg-color {
+        background-color: salmon;
+      }
+
+      .bg-image {
+        background-image: url("illustrate-tokyo-city-by-night-with-anime-mangastyle-drawings-featuring-city-views-vibrant-purple-neon-lights-generative-ai_379823-7278-transformed.png");
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: center;
+      }
+
+      .bg-gradient {
+        background: linear-gradient(to bottom, #00ff00, #0000ff);
+      }
+
+      .solid {
+        border: 5px solid #ff0000;
+      }
+
+      .dotted {
+        border: 5px dotted #00ff00;
+      }
+
+      .dashed {
+        border: 5px dashed #0000ff;
+      }
+
+      .margin {
+        margin: 20px 20px;
+        border: 1px solid white;
+      }
+
+      .padding {
+        padding: 60px;
+      }
+
+      .br {
+        border: 1px solid white;
+      }
+
+      .height {
+        height: 120px;
+      }
+
+      .width {
+        width: 120px;
+      }
+
+      .sans {
+        font-family: sans-serif;
+      }
+
+      .monospace {
+        font-family: monospace;
+      }
+
+      .block {
+        display: block;
+      }
+
+      .inline {
+        display: inline;
+      }
+
+      .fit {
+        max-width: fit-content;
+      }
+
+      .max {
+        max-width: max-content;
+      }
+
+      .min {
+        min-width: min-content;
+      }
+
+      .rt {
+        position: relative;
+      }
+
+      .ab {
+        position: absolute;
+        top: 0;
+        left: -120px;
+      }
+
+      .static {
+        position: static;
+      }
+
+      .sticky {
+        position: sticky;
+      }
+
+      .left {
+        float: left;
+      }
+
+      .right {
+        float: right;
+      }
+
+      .none {
+        float: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS BASIC</h1>
+
+    <div class="item space">
+      <h2>COLOR</h2>
+      <div class="all">
+        <div class="kotak hex">Dengan Hex Color</div>
+        <div class="kotak rgb">Dengan RGB Color</div>
+        <div class="kotak hsl">Dengan HSL Color</div>
+      </div>
+    </div>
+
+    <div class="item space">
+      <h2>BACKGROUND</h2>
+      <div class="all bg">
+        <div class="bg-color kotak">Background Color</div>
+        <div class="bg-image kotak">Background Image</div>
+        <div class="bg-gradient kotak">Background Gradient</div>
+      </div>
+    </div>
+
+    <div class="item space">
+        <h2>BORDER</h2>
+        <div class="all bg">
+            <div class="solid kotak">Solid Border</div>
+            <div class="dotted kotak">Dotted Border</div>
+            <div class="dashed kotak">Dashed Border</div>
+        </div>
+    </div>
+
+    <div class="item space">
+        <h2>MARGIN / PADDING</h2>
+        <div class="all bg">
+            <div class=" kotak">
+                <div class="margin kotak">Margin</div>
+            </div>
+            <div class="padding kotak">
+                <div class="br kotak">Padding</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="item space">
+        <h2>HEIGHT / WIDTH</h2>
+        <div class="all bg">
+            <div class="height kotak">Height</div>
+            <div class="width kotak">Width</div>
+        </div>
+    </div>
+
+    <div class="item space">
+        <h2>FONT</h2>
+        <div class="all bg">
+            <div class="kotak serif">Sans Serif</div>
+            <div class="kotak monospace">Monospace</div>
+        </div>
+    </div>
+
+    <div class="item space">
+        <h2>DISPLAY</h2>
+        <div class="all bg">
+            <div class="kotak block">Block Display</div>
+            <div class="kotak inline">Inline Display</div>
+        </div>
+    </div>
+
+    <div class="item space">
+        <h2>MAX-WIDTH</h2>
+        <div class="all bg">
+            <div class="kotak fit">Fit-Content</div>
+            <div class="kotak max">Max-Content</div>
+            <div class="kotak min">Min-Content</div>
+        </div>
+    </div>
+
+    <div class="item space">
+        <h2>POSITION</h2>
+        <div class="all bg rt">
+            <div class="kotak ab">Position Absolute</div>
+            <div class="kotak static">Position Static</div>
+            <div class="kotak sticky">Position Sticky</div>
+        </div>
+    </div>
+
+    <div class="item space">
+        <h2>FLOAT</h2>
+        <div class="all bg">
+            <div class="kotak left">Float Left</div>
+            <div class="kotak right">Float Right</div>
+            <div class="kotak none">No Float</div>
+        </div>
+    </div>
+  </body>
+</html>
