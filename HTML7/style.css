@@ -76,6 +76,27 @@ header {
   color: #fff;
 }
 
+.hover-t1:hover {
+  background-color: #282a35;
+  color: #fff;
+}
+
+.hover-t1:hover .dropdown-content1 {
+  display: block;
+}
+
+.hover-t1:hover .dropdown-content2 {
+  display: block;
+}
+
+.hover-t1:hover .dropdown-content3 {
+  display: block;
+}
+
+.hover-t1:hover .dropdown-content4 {
+  display: block;
+}
+
 .hover-dd-b:hover {
   background-color: #282a35;
 }
