@@ -13,6 +13,7 @@ click1.addEventListener("click", () => {
   document.querySelector(".dropdown-content2").classList.remove("none");
   document.querySelector(".dropdown-content3").classList.remove("none");
   document.querySelector(".dropdown-content4").classList.remove("none");
+  document.querySelector(".ic-1").classList.toggle(".rotate");
 });
 
 click2.addEventListener("click", () => {
