@@ -67,9 +67,14 @@ header {
 }
 
 .content {
-  justify-content: start;
-  align-items: center;
+  justify-content: space-between;
+  align-items: start;
   display: flex;
+}
+
+.parent {
+  display: flex;
+  flex-direction: column;
 }
 
 .item {
@@ -77,11 +82,77 @@ header {
   color: #fff;
 }
 
-.content p:nth-child(1) {
+.child {
+  margin-bottom: 10px;
+}
+
+.child::before {
+  content: "Learn";
+  font-size: 13px;
+  color: #ddd;
+  margin-right: 5px;
+}
+
+.child-v1::after {
+  content: "Tutorial";
+  font-size: 12px;
+  color: #FFF4A3;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.child-v2::after {
+  content: "Reference";
+  font-size: 12px;
+  color: #FFF4A3;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.child-v3::after {
+  content: "Overview";
+  font-size: 12px;
+  color: #FFF4A3;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.child-v4::after {
+  content: "Quiz";
+  font-size: 12px;
+  color: #FFF4A3;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.dua p:nth-child(2) {
+  font-size: 12px;
+  color: #FFF4A3;
+  text-decoration: underline;
+  margin-left: 15px;
+  font-weight: bold;
+  margin-top: 2px;
+}
+
+.dua {
+  justify-content: start;
+  align-items: start;
+  display: flex;
+}
+
+.head {
   font-size: 22px;
   font-weight: 100;
   color: #FFF4A3;
   margin: 20px 0;
+}
+
+.margin {
+  margin-top: 40px;
 }
 
 .none {
