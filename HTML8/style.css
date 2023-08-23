@@ -13,6 +13,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 10;
 }
 
 .up {
@@ -63,7 +64,7 @@ header {
 
 .heading {
   font-size: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .content {
@@ -83,6 +84,10 @@ header {
 }
 
 .child {
+  margin-bottom: 10px;
+}
+
+.child-m1 {
   margin-bottom: 10px;
 }
 
@@ -122,6 +127,41 @@ header {
 
 .child-v4::after {
   content: "Quiz";
+  font-size: 12px;
+  color: #FFF4A3;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.child-c1 {
+  font-size: 12px;
+  color: #FFF4A3;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.child-c2::after {
+  content: "Course";
+  font-size: 12px;
+  color: #FFF4A3;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.child-c3::before {
+  content: "Certificate";
+  font-size: 12px;
+  color: #FFF4A3;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.child-c3::after {
+  content: "Bootcamp";
   font-size: 12px;
   color: #FFF4A3;
   text-decoration: underline;
