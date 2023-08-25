@@ -323,3 +323,48 @@ header {
   align-items: center;
   display: flex;
 }
+
+section {
+  width: 100%;
+  height: 100vh;
+}
+
+.side {
+  width: 230px;
+  height: 100%;
+  justify-content: start;
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 20px;
+  margin-top: 60px;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #E7E9EB;
+}
+
+.heading-side {
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+}
+
+.side a {
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-weight: 100;
+  font-size: 14px;
+  letter-spacing: 1px;
+  width: 100%;
+  height: 100%;
+}
+
+.active {
+  width: 100%;
+  height: 100%;
+  background: #04aa6d;
+  color: #fff;
+}
