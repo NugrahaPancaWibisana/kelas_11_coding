@@ -315,3 +315,11 @@ header {
   font-weight: 100;
   margin-top: 20px;
 }
+
+.main-content-tengah {
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
