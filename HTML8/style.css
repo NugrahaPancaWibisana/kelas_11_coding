@@ -403,3 +403,34 @@ section {
   align-items: start;
   justify-content: start;
 }
+
+.head-content {
+  font-size: 40px;
+}
+
+.margin-left {
+  margin-left: 30px;
+}
+
+.btn-up {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding-left: 30px;
+  padding-right: 230px;
+  margin-top: 20px;
+}
+
+.btn-up button {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: none;
+  background-color: #04aa6d;
+  padding: 12px 18px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bolder;
+}
