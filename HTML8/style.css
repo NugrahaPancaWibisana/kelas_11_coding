@@ -397,6 +397,24 @@ section {
   flex-direction: column;
 }
 
+.content-intro {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.content-intro::after {
+  content: "";
+  width: 1px;
+  height: 200vh;
+  background-color: #ddd;
+  opacity: .2;
+  position: absolute;
+  top: -200px;
+  right: 230px;
+}
+
 .left {
   width: 100%;
   display: flex;
@@ -418,7 +436,7 @@ section {
   align-items: center;
   display: flex;
   padding-left: 30px;
-  padding-right: 230px;
+  padding-right: 250px;
   margin-top: 20px;
 }
 
@@ -433,4 +451,49 @@ section {
   font-size: 16px;
   color: #fff;
   font-weight: bolder;
+}
+
+.p-1, .p-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.p-1 p:nth-child(1) {
+  font-size: 17px;
+  word-spacing: 1px;
+  margin-top: 40px;
+}
+
+.p-1 p:nth-child(2n + 0) {
+  font-size: 30px;
+  margin-top: 60px;
+}
+
+.p-1 ul {
+  margin-top: 20px;
+}
+
+.p-1 ul li {
+  font-size: 17px;
+  line-height: 22px;
+}
+
+code {
+  background-color: #eee;
+  color: red;
+  padding: 1px 3px;
+}
+
+.p-2 p:nth-child(1) {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.p-2 ul {
+  margin-top: 20px;
+}
+
+.p-2 ul li {
+  font-size: 17px;
+  line-height: 22px;
 }
